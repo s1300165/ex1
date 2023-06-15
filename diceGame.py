@@ -1,5 +1,11 @@
 import random
 
+def print_usr():
+    name = input("What is your name?\n>")
+    print("Hello,", name)
+
+print_usr()
+
 def roll_dice():
     print("Rolling dice...")
     d1 = random.randint(1, 6)
