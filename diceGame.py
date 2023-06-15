@@ -1,6 +1,7 @@
 import random
 
 def print_usr():
+    global name
     name = input("What is your name?\n>")
     print("Hello,", name)
 
@@ -15,8 +16,8 @@ def roll_dice():
     sum = d1+d2
     print("Total value:", sum)
     if sum > 7:
-        print("You won!")
+        print(name," won!")
     else:
-        print("You lost")
+        print(name," lost")
 
 roll_dice()
