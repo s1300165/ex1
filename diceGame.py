@@ -6,6 +6,11 @@ def roll_dice():
     d2 = random.randint(1, 6)
     print("Die 1:", d1)
     print("Die 2:", d2)
-    print("Total value:", d1 + d2)
+    sum = d1+d2
+    print("Total value:", sum)
+    if sum > 7:
+        print("You won!")
+    else:
+        print("You lost")
 
 roll_dice()
